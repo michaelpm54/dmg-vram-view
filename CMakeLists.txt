@@ -17,6 +17,9 @@ add_executable(${EXE}
 	main.cpp
 )
 
+set_property(TARGET ${EXE} PROPERTY CXX_STANDARD 20)
+set_property(TARGET ${EXE} PROPERTY CXX_STANDARD_REQUIRED ON)
+
 target_include_directories(${EXE}
 	PRIVATE
 		${FETCHCONTENT_BASE_DIR}/sdl2-src/include
